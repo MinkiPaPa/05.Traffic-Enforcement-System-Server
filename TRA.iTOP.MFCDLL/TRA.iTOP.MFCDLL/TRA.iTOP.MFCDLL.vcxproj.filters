@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\PrintNotice">
+      <UniqueIdentifier>{5c235e93-9e4d-4f00-aa1d-591ea1f83390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\PrintNotice">
+      <UniqueIdentifier>{6ffdd4ea-ad70-4a52-ac0e-dc08ffa82988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\printing">
+      <UniqueIdentifier>{339cb594-3817-429f-a59d-7a80ede95989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\printing">
+      <UniqueIdentifier>{ba538439-7e5d-4d53-b6e7-1e49d2c031ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TRA.iTOP.MFCDLL.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CPage.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="CPrinter.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="Dib.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="IamTPrint.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="Issue_Receipt.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="IssuePrint.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="IssuePrint_Form.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="IssuePrint_Notices.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="PredefineInfo.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="UxIni.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="Print_CaseDetail.cpp">
+      <Filter>소스 파일\printing</Filter>
+    </ClCompile>
+    <ClCompile Include="Print_PayReceipt.cpp">
+      <Filter>소스 파일\printing</Filter>
+    </ClCompile>
+    <ClCompile Include="Print_Represent.cpp">
+      <Filter>소스 파일\printing</Filter>
+    </ClCompile>
+    <ClCompile Include="Print_TBos.cpp">
+      <Filter>소스 파일\printing</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintBase.cpp">
+      <Filter>소스 파일\printing</Filter>
+    </ClCompile>
+    <ClCompile Include="PrnPaper.cpp">
+      <Filter>소스 파일\PrintNotice</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TRA.iTOP.MFCDLL.def">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="res\TRA.iTOP.MFCDLL.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TRA.iTOP.MFCDLL.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CPage.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="CPrinter.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="Dib.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="IamTPrint.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="Issue_Receipt.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="IssuePrint.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="IssuePrint_Form.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="IssuePrint_Notices.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="PredefineInfo.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="UxIni.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="Print_CaseDetail.h">
+      <Filter>헤더 파일\printing</Filter>
+    </ClInclude>
+    <ClInclude Include="Print_PayReceipt.h">
+      <Filter>헤더 파일\printing</Filter>
+    </ClInclude>
+    <ClInclude Include="Print_Represent.h">
+      <Filter>헤더 파일\printing</Filter>
+    </ClInclude>
+    <ClInclude Include="Print_TBos.h">
+      <Filter>헤더 파일\printing</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintBase.h">
+      <Filter>헤더 파일\printing</Filter>
+    </ClInclude>
+    <ClInclude Include="PrnPaper.h">
+      <Filter>헤더 파일\PrintNotice</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TRA.iTOP.MFCDLL.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

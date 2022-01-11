@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC400B0E-2F73-4388-AADF-ACBBE9D1A520}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TRA.iTOPS.Win</RootNamespace>
+    <AssemblyName>TRA.iTOPS.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Documents.Reports.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2017.2\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Reports.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.DataVisualization.Shared.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraGauges.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Portable.Core.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinListView.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinLiveTileView.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinPrintPreviewDialog.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.v17.2, Version=17.2.20172.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TRA.iTOPS.Biz, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\TRA.iTOPS.Biz.dll</HintPath>
+    </Reference>
+    <Reference Include="TRA.iTOPS.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\TRA.iTOPS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="TRA.iTOPS.Service.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\TRA.iTOPS.Service.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="TRA.iTOPS.Windows.Set, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\TRA.iTOPS.Windows.Set.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CasePanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CasePanelForm.Designer.cs">
+      <DependentUpon>CasePanelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrint\PrintDataOptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrint\PrintDataOptionForm.designer.cs">
+      <DependentUpon>PrintDataOptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrint\PrintPreInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrint\PrintPreInfoForm.designer.cs">
+      <DependentUpon>PrintPreInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrint\PrintSplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrint\PrintSplashForm.Designer.cs">
+      <DependentUpon>PrintSplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EachCase\ImageViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EachCase\ImageViewForm.Designer.cs">
+      <DependentUpon>ImageViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EachCase\CourtDecisionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EachCase\CourtDecisionForm.Designer.cs">
+      <DependentUpon>CourtDecisionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EachCase\NoticeRePrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EachCase\NoticeRePrintForm.Designer.cs">
+      <DependentUpon>NoticeRePrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EachCase\PayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EachCase\PayForm.Designer.cs">
+      <DependentUpon>PayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EachCase\PersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EachCase\PersonForm.Designer.cs">
+      <DependentUpon>PersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EachCase\RepresentationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EachCase\RepresentationForm.Designer.cs">
+      <DependentUpon>RepresentationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportNatisDownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportNatisDownForm.Designer.cs">
+      <DependentUpon>ImportNatisDownForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeNatisUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeNatisUpForm.Designer.cs">
+      <DependentUpon>MakeNatisUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberingForm.Designer.cs">
+      <DependentUpon>NumberingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintDataForm.designer.cs">
+      <DependentUpon>PrintDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportPayForm.Designer.cs">
+      <DependentUpon>ReportPayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CasePanelForm.resx">
+      <DependentUpon>CasePanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrint\PrintDataOptionForm.resx">
+      <DependentUpon>PrintDataOptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrint\PrintPreInfoForm.resx">
+      <DependentUpon>PrintPreInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrint\PrintSplashForm.resx">
+      <DependentUpon>PrintSplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EachCase\ImageViewForm.resx">
+      <DependentUpon>ImageViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EachCase\CourtDecisionForm.resx">
+      <DependentUpon>CourtDecisionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EachCase\NoticeRePrintForm.resx">
+      <DependentUpon>NoticeRePrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EachCase\PayForm.resx">
+      <DependentUpon>PayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EachCase\PersonForm.resx">
+      <DependentUpon>PersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EachCase\RepresentationForm.resx">
+      <DependentUpon>RepresentationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportNatisDownForm.resx">
+      <DependentUpon>ImportNatisDownForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeNatisUpForm.resx">
+      <DependentUpon>MakeNatisUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberingForm.resx">
+      <DependentUpon>NumberingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintDataForm.resx">
+      <DependentUpon>PrintDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPayForm.resx">
+      <DependentUpon>ReportPayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
