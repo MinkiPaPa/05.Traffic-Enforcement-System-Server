@@ -33,13 +33,13 @@ Author, Code by MinkiPaPa.
    |Module|Content|Type|Derendence|Status|
    |---|---|---|---|---|
    |TRA.iTOPS.Launcher.exe|프로그램의 시작점, 전역 에러체크, UI설정 및 로그인 화면 실행|exe|TRA.iTOPS.Contracts,  TRA.iTOPS.Windows.Set, TRA.iTOPS.Diagnostics.dll|완료|
-   |TRA.iTOPS.Contracts.dll|공통관련 라이브러리(공통함수, 예외처리 등)|Dll|N/A|완료|
-   |TRA.iTOPS.Diagnostics.dll|애플리케이션 오류 로그 관련 라이브러리|Dll|N/A|완료|
-   |TRA.iTOPS.Service.Core.dll|DB(MSSQL) 연결 및 설정 관련 라이브러리|Dll|TRA.iTOPS.Diagnostics.dll, TRA.iTOPS.Contracts.dll|완료|
-   |TRA.iTOPS.Biz.dll|화면별 DB쿼리를 모아놓은 라이브러리|Dll|TRA.iTOPS.Service.Core, TRA.iTOPS.Contracts|완료|
-   |TRA.iTOPS.Windows.Set.dll|로그인 및 메인화면 및 화면Style 라이브러리|Dll|TRA.iTOPS.Contracts, TRA.iTOPS.Biz|완료|
-   |TRA.iTOPS.Win.dll|업무화면 라이브러리|Dll|TRA.iTOPS.Windows.Set,TRA.iTOPS.Contracts,TRA.iTOPS.Biz|완료|
-   |TRA.iTOP.MFCDLL.dll|업무 화면별 프린트 및 EasyPayNumber생성 관련 MFC 라이브러리|Dll|TRA.iTOPS.Win|완료|
+   |TRA.iTOPS.Contracts.dll|공통관련 라이브러리(공통함수, 예외처리 등)|dll|N/A|완료|
+   |TRA.iTOPS.Diagnostics.dll|애플리케이션 오류 로그 관련 라이브러리|dll|N/A|완료|
+   |TRA.iTOPS.Service.Core.dll|DB(MSSQL) 연결 및 설정 관련 라이브러리|dll|TRA.iTOPS.Diagnostics.dll, TRA.iTOPS.Contracts.dll|완료|
+   |TRA.iTOPS.Biz.dll|화면별 DB쿼리를 모아놓은 라이브러리|dll|TRA.iTOPS.Service.Core, TRA.iTOPS.Contracts|완료|
+   |TRA.iTOPS.Windows.Set.dll|로그인 및 메인화면 및 화면Style 라이브러리|dll|TRA.iTOPS.Contracts, TRA.iTOPS.Biz|완료|
+   |TRA.iTOPS.Win.dll|업무화면 라이브러리|dll|TRA.iTOPS.Windows.Set,TRA.iTOPS.Contracts,TRA.iTOPS.Biz|완료|
+   |TRA.iTOP.MFCDLL.dll|업무 화면별 프린트 및 EasyPayNumber생성 관련 MFC 라이브러리|dll|TRA.iTOPS.Win|완료|
 
 # 5. Appendix - Reference
    - South Africa Traffic Law Office Book
