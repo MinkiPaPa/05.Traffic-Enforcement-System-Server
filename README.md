@@ -9,7 +9,7 @@ Author, Code by MinkiPaPa.
       - 자동차 번호판 인식 기능의 적용 ( OpenALPR 적용 )
       - 남아공 eNaTis ( National Traffic Information System )과 데이터 연동
       - 시스템이 적용되는 각 도시별 결제 이력 연동을 위한 ERP 연동
-   - 기타 공통 정보는 Client Repository Readme 참조 <http://example.com/>
+   - 기타 공통 정보는 Client Repository Readme 참조 [LINK](https://github.com/MinkiPaPa/04.Traffic-Enforcement-System-Client#trafficspeed-enforcement-system-client)
    
 # 2. Solution Process Diagram
 ![image](https://user-images.githubusercontent.com/97417837/149051915-aaedd548-14dd-4596-90d7-bb174409529c.png)
@@ -54,6 +54,6 @@ Author, Code by MinkiPaPa.
    |DBLibDistribute|iTopsDistribute.exe 의 Data 처리 라이브러리|dll|N/A|완료|
    |DBCodes|Code Master 및 각종 코드 테이블 조회 라이브러리|dll|N/A|완료|
 
-# 6. Appendix - Reference
+# 5. Appendix - Reference
    - South Africa Traffic Law Office Book
      - [TRAFFIC LAW OFFENCE BOOK 2014 FINAL.pdf](https://github.com/MinkiPaPa/04.Traffic-Enforcement-System-Client/files/7851510/TRAFFIC.LAW.OFFENCE.BOOK.2014.FINAL.pdf)
