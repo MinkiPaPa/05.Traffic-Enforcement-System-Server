@@ -17,42 +17,29 @@ Author, Code by MinkiPaPa.
 # 3. DataBase Structure 
    |DB table name|Content|Status|
    |---|---|---|
-   |CODE_GROUP|코드 그룹 분류,관리|완료|
-   |CODE_MASTER|그룹화된 세부 코드 분류,관리|완료|
-   |PERSONS|단속차량 인적 정보|완료|
-   |USERS|교통경찰, 시경 접속 사용자 정보|완료|
-   |REGULATIONS|단속 정보 데이터|완료|
-   |OFFENCES|단속 정보 검수 데이터|완료|
-   |VEHICLE_MAKE|단속 차량 메이커 정보|완료|
-   |VEHICLE_TYPE|단속 차량 타잎 정보|완료|
-   |OFFENCE_CODE|단속 위반 코드 관리|완료|
-   |LOCATION_CODE|단속 도로 및 위치 코드 관리|완료|
-   |LOCATION_MAP|단독 도로,위치와 위반코드 맵핑 데이터|완료|
-   |CONTRAVENTIONS|단속 위반 데이터|완료|
+   |CONTRAVENTIONS|메인 단속정보 테이블||
+   |HISTORY_OPERATION|진행단계 History  테이블||
+   |HISTORY_NOTICENUM|고지서번호 History 테이블||
+   |HISTORY_CHANGE|요금 및 이의제기, 법정등 상태변경 History테이블||
+   |HISTORY_REPRESENTATION|이의 제기 관련 History 테이블||
+   |HISTORY_PAY|범칙금 관련 Histrory 테이블||
+   |NUMBER_RECEIPT|요금접수번호 생성관련 테이블||
+   |NUMBER_NATIS|Natis 파일 시퀀스번호 생성관련 테이블||
+   |NUMBER_NOTICE|Notice 번호 생성 관련 테이블||
+   |NUMBER_EASYPAY|EasyPay 번호 생성 관련 테이블||
+   |USERS|시, 경찰 접속 사용자 테이블||
 
 # 4. Module Architect
    |Module|Content|Type|Derendence|Status|
    |---|---|---|---|---|
-   |iTopsMain|Main Program|exe|iTopsLib|완료|
-   |iTopsUpRGLTN|단속 영상에서 Plate 추출 및 판독, 업로드|exe|iTopsLib, UseLibALPR, UseLibLTI|완료|
-   |iTopsDistribute|검수 담당자 지정|exe|iTopsLib|완료|
-   |iTopsInspection|단속 내용 검수|exe|iTopsLib|완료|
-   |iTopsMngOffenceCd|Offence Code 관리|exe|iTopsLib|완료|
-   |iTopsMngLocationMap|Location와 Offence Code Mapping|exe|iTopsLib|완료|
-   |iTopsCdMaster|Code Master 관리|exe|iTopsLib|예정|
-   |iTopsUser|사용자 관리|exe|iTopsLib|완료|
-   |iTopsMngLocationCd|Location Code 관리|exe|iTopsLib|완료|
-   |iTopsLib|iTops 공통 라이브러리|dll|iTopsFTP, DBLibUpRGLTN, DBLibMngOffenceCd, DBCodes DBLibMngLocationMap, DBLibInspection, DBLibDistribute|완료|
-   |iTopsFTP|Ftp 라이브러리|dll|N/A|완료|
-   |AlprNet|OpenALPR 외부 라이브러리를 활용한 번호판 판독|dll|N/A|외부 라이브러리 활용, 완료|
-   |VehicleClassifierNet|OpenALPR 외부 라이브러리를 활용한 차량 정보 추출|dll|N/A|외부 라이브러리 활용, 완료|
-   |UseLibALPR|Alpr SDK 제어|dll|AlprNet, VehicleClassifierNet|완료|
-   |UseLibLTI|LTI 장비의 단속 Data 추출 SDK활용|dll|N/A|완료|
-   |LibMngOffenceCd|iTopsMngOffenceCd.exe의 Data 처리 라이브러리|dll|N/A|완료|
-   |DBLibMngLocationMap|iTopsMngLocationMap.exe의 Data 처리 라이브러리|dll|N/A|완료|
-   |DBLibInspection|iTopsInspection.exe의 Data 처리 라이브러리|dll|N/A|완료|
-   |DBLibDistribute|iTopsDistribute.exe 의 Data 처리 라이브러리|dll|N/A|완료|
-   |DBCodes|Code Master 및 각종 코드 테이블 조회 라이브러리|dll|N/A|완료|
+   |TRA.iTOPS.Launcher.exe|프로그램의 시작점, 전역 에러체크, UI설정 및 로그인 화면 실행|exe|TRA.iTOPS.Contracts,  TRA.iTOPS.Windows.Set, TRA.iTOPS.Diagnostics.dll|완료|
+   |TRA.iTOPS.Contracts.dll|공통관련 라이브러리(공통함수, 예외처리 등)|Dll|N/A|완료|
+   |TRA.iTOPS.Diagnostics.dll|애플리케이션 오류 로그 관련 라이브러리|Dll|N/A|완료|
+   |TRA.iTOPS.Service.Core.dll|DB(MSSQL) 연결 및 설정 관련 라이브러리|Dll|TRA.iTOPS.Diagnostics.dll, TRA.iTOPS.Contracts.dll|완료|
+   |TRA.iTOPS.Biz.dll|화면별 DB쿼리를 모아놓은 라이브러리|Dll|TRA.iTOPS.Service.Core, TRA.iTOPS.Contracts|완료|
+   |TRA.iTOPS.Windows.Set.dll|로그인 및 메인화면 및 화면Style 라이브러리|Dll|TRA.iTOPS.Contracts, TRA.iTOPS.Biz|완료|
+   |TRA.iTOPS.Win.dll|업무화면 라이브러리|Dll|TRA.iTOPS.Windows.Set,TRA.iTOPS.Contracts,TRA.iTOPS.Biz|완료|
+   |TRA.iTOP.MFCDLL.dll|업무 화면별 프린트 및 EasyPayNumber생성 관련 MFC 라이브러리|Dll|TRA.iTOPS.Win|완료|
 
 # 5. Appendix - Reference
    - South Africa Traffic Law Office Book
